@@ -1,11 +1,16 @@
 import React from 'react';
-import Menu from './components/Menu'
+import styled from 'styled-components';
+import Menu from './components/Menu';
+
+const AppWrapper = styled.div`
+  background: var(--grayDark);
+`;
 
 function App() {
   return (
-    <div className="App">
+    <AppWrapper>
       <Menu />
-    </div>
+    </AppWrapper>
   );
 }
 
